@@ -5,8 +5,9 @@ import br.com.alura.screenmatch.model.DadosSerie;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class ConverteDados implements IConveteDados {
    private ObjectMapper mapper = new ObjectMapper();
 

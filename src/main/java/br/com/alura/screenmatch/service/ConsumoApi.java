@@ -1,6 +1,7 @@
 package br.com.alura.screenmatch.service;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.net.URI;
@@ -8,7 +9,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-@Component
+@Service
 public class ConsumoApi{
     public String obterDados(String endereco) {
         HttpClient client = HttpClient.newHttpClient();
